@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+@layer components {
+    .tenang-card {
+        @apply bg-white/70 backdrop-blur-sm border border-white/60 shadow-[0_8px_30px_rgb(167,139,250,0.12)] rounded-3xl;
+    }
+
+    .tenang-input {
+        @apply border-violet-200 focus:border-violet-400 focus:ring-violet-300 rounded-xl bg-white/80 placeholder:text-violet-300;
+    }
+
+    .tenang-btn {
+        @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500 to-indigo-400 text-white text-sm font-semibold shadow-lg shadow-violet-300/50 hover:shadow-xl hover:shadow-violet-400/40 hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2;
+    }
+
+    .tenang-btn-secondary {
+        @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-white/80 text-violet-600 text-sm font-semibold border border-violet-200 hover:bg-violet-50 hover:border-violet-300 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-violet-300;
+    }
+}
