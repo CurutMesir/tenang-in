@@ -1,66 +1,145 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ☁️ Tenang.in — Ruang Tenang untuk Hatimu
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <em>Jurnal kesehatan mental pribadi dengan teman curhat AI untuk remaja Indonesia</em>
 </p>
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Tenang.in** adalah aplikasi web jurnal kesehatan mental yang memberi remaja ruang privat untuk menulis perasaan, melacak mood harian, dan berlatih bersyukur — dilengkapi **teman curhat AI bernama "Tenang"** yang siap mendengarkan kapan saja.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+> 💡 *"Tulis apa pun yang kamu rasakan. Semua tersimpan aman, terkunci PIN, dan tidak akan dibaca siapa pun."*
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ✨ Fitur Utama
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+| Fitur | Deskripsi |
+|---|---|
+| 📓 **Jurnal Harian** | Tulis cerita & keluh kesah dengan font handwritten yang hangat. Dilengkapi judul, tanggal mundur, pencarian, dan filter per mood |
+| 🙂 **Mood Tracker** | Pilih 5 tingkat mood (emoji) setiap kali menulis jurnal |
+| 📊 **Statistik Mood** | Kalender mood berwarna ala heatmap, grafik distribusi mood, dan tren 6 bulan terakhir |
+| 🔥 **Streak Menulis** | Motivasi konsisten dengan penghitung hari berturut-turut |
+| 💭 **Prompt Refleksi** | 15 pertanyaan refleksi acak sebagai pancingan saat bingung mau nulis apa |
+| 🌱 **Gratitude List** | Catat hal-hal kecil yang disyukuri, terkelompok rapi per tanggal |
+| 💬 **Curhat AI** | Ngobrol langsung dengan "Tenang" — AI suportif berbasis Google Gemini dengan kepribadian hangat & asik |
+| 🔐 **Kunci PIN** | Lindungi jurnal dengan PIN 6 digit + keypad interaktif; sesi baru = jurnal terkunci lagi |
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🛡️ Tanggung Jawab atas Kesehatan Mental
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Tenang dirancang dengan prinsip *safe by design*:
 
-## Laravel Sponsors
+- AI dikonfigurasi agar **tidak pernah mendiagnosis** atau memberi saran medis
+- Jika pengguna menunjukkan tanda krisis, Tenang otomatis mengarahkan ke **SEJIWA 119 ext. 8** (layanan kesehatan jiwa Kemkes, gratis 24 jam)
+- Disclaimer jelas: AI adalah pendengar, bukan pengganti psikolog
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🛠️ Tech Stack
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+| Layer | Teknologi |
+|---|---|
+| Framework | Laravel 12 |
+| Frontend | Blade + Tailwind CSS 3 + Alpine.js |
+| Database | MySQL |
+| AI | Google Gemini API (`gemini-flash-lite-latest`) |
+| Autentikasi | Laravel Breeze |
+| Build Tool | Vite |
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🚀 Cara Menjalankan Project
 
-## Code of Conduct
+### Prasyarat
+- PHP ≥ 8.2 ([cek versi](https://www.php.net/downloads))
+- Composer
+- Node.js ≥ 18
+- MySQL (XAMPP/Laragon/MySQL standalone)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Langkah Instalasi
 
-## Security Vulnerabilities
+```bash
+# 1. Clone repository
+git clone https://github.com/AufaRijalRais/tenang.in.git
+cd tenang.in
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# 2. Install dependency
+composer install
+npm install && npm run build
 
-## License
+# 3. Konfigurasi environment
+copy .env.example .env        # Windows (Linux/Mac: cp .env.example .env)
+php artisan key:generate
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+# 4. Buat database MySQL
+mysql -u root -e "CREATE DATABASE tenangin CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+```
+
+5. Edit file `.env`, sesuaikan bagian ini:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=tenangin
+DB_USERNAME=root
+DB_PASSWORD=
+
+GEMINI_API_KEY=isi_api_key_gemini_kamu   # gratis dari https://aistudio.google.com/apikey
+GEMINI_MODEL=gemini-flash-lite-latest
+```
+
+```bash
+# 6. Migrasi database + isi prompt refleksi & kutipan motivasi
+php artisan migrate --seed
+
+# 7. Jalankan!
+php artisan serve
+```
+
+Buka **http://127.0.0.1:8000** → daftar akun → mulai menulis! ☁️
+
+---
+
+## 🗂️ Struktur Database
+
+```
+users                → akun pengguna (+ pin_code terenkripsi hash)
+├── journals         → jurnal harian (mood 1–5, prompt refleksi opsional)
+├── gratitude_items  → catatan syukur per tanggal
+├── chat_messages    → riwayat obrolan dengan AI
+reflection_prompts   → bank pertanyaan refleksi (global, di-seed)
+quotes               → kutipan motivasi (global, di-seed)
+```
+
+## 🔀 Alur Privasi Jurnal
+
+```
+Login ✓ → Ada PIN? ──Ya──→ Layar Kunci PIN → PIN benar? → Akses Jurnal
+                └─Tidak────────────────────────────────────┘
+```
+
+Setiap sesi browser baru, PIN harus dimasukkan ulang — meski perangkat dipinjam orang, jurnal tetap aman.
+
+---
+
+## 🖼️ Screenshot
+
+> *(tambahkan screenshot aplikasimu di folder `docs/` lalu ganti bagian ini)*
+
+| Dashboard | Statistik Mood | Curhat AI |
+|---|---|---|
+| ![Dashboard](docs/dashboard.png) | ![Statistik](docs/statistik.png) | ![Chat AI](docs/curhat-ai.png) |
+
+---
+
+## 👤 Author
+
+**Aufa Rijal Rais**
+- GitHub: [@AufaRijalRais](https://github.com/AufaRijalRais)
+
+## 📄 License
+
+Project ini dibuat untuk keperluan edukasi. Silakan gunakan dan modifikasi dengan bebas.
